@@ -8,6 +8,8 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "types": "src/ui/index.d.ts",
+  "main": "src/ui/index.js",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
