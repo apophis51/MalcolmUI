@@ -8,8 +8,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "types": "index.d.ts",
-  "main": "index.js",
+  "types": "src/ui/index.d.ts",
+  "main": "src/ui/index.js",
+  "files": ["index.js", "index.d.ts, src/ui"],
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

@@ -30,3 +30,7 @@ export default function useBasicSelect({options, maintext}:{options: string[] | 
 
     return [ selectedOption,BasicSelect ]
 }
+
+
+// The .tsx files are your source files that should not be directly imported by consumers. They are meant for development and compilation into JavaScript. The consumers should not import these files directly unless they are also working in a TypeScript environment and have access to the source code for their own use, which is uncommon for packaged libraries.
+
