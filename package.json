@@ -10,7 +10,10 @@
   },
   "types": "src/ui/index.d.ts",
   "main": "src/ui/index.js",
-  "files": ["index.js", "index.d.ts, src/ui"],
+  "files": [
+    "index.js",
+    "index.d.ts, src/ui"
+  ],
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
