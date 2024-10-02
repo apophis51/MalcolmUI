@@ -1,17 +1,24 @@
 import { useState } from 'react'
 
 
-/*************  ✨ Codeium Command ⭐  *************/
+ 
     /**
+     * @param leftText - The text on the left side of the toggle
+     * @param RightText - The text on the right side of the toggle
      * 
-     * @param {Object} props
-     * @prop {string} props.leftText Text to the left of the toggle button
-     * @prop {string} props.RightText Text to the right of the toggle button
-     * @returns an array of a boolean and a React component. The boolean is a state variable that tracks the state of the toggle button. The React component is the toggle button itself.
+     * This Function must take the form:
+     *  
+     *const [toggled, BasicToggle] = useBasicToggle({ leftText: 'Your Text', RightText: 'Your Right Item' })
+     *
+     *And Insert it Into Your JSX using the Form:
+     *  \<BasicToggle />
+     *
+     * When the UI is toggled to the Right - The toggled button will be "True" 
+     * 
+     * When it is toggled to the left - the toggled button will be "False"
      */
-/******  ac98486a-82cf-486a-a5e6-72266fa08c28  *******/
 export default function useBasicToggle({ leftText, RightText }: { leftText: string, RightText: string }): [ boolean, React.FC ] {
-    const [toggled, setToggled] = useState(false);
+    const [toggled, setToggled] = useState(true);
 
     function BasicToggle() {
 
@@ -19,7 +26,7 @@ export default function useBasicToggle({ leftText, RightText }: { leftText: stri
             <div className='flex items-center justify-center whitespace-pre '>
                 <p>{leftText}  </p>
                 <input 
-                checked={!toggled}
+                checked={toggled}
                 type="checkbox" 
                 onClick={() => toggled ? setToggled(false) : setToggled(true)} className="toggle" defaultChecked />
                 
@@ -33,3 +40,6 @@ export default function useBasicToggle({ leftText, RightText }: { leftText: stri
 
     return [toggled, BasicToggle]
 }
+
+
+// The .tsx files are your source files that should not be directly imported by consumers. They are meant for development and compilation into JavaScript. The consumers should not import these files directly unless they are also working in a TypeScript environment and have access to the source code for their own use, which is uncommon for packaged libraries.
