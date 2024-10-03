@@ -1,7 +1,7 @@
 {
   "name": "malcolm_ui_react",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "types": "src/ui/index.d.ts",
-  "main": "src/ui/index.js",
+  "main": "src/ui/index",
   "files": [
     "index.js",
     "index.d.ts",
