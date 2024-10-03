@@ -1,21 +1,20 @@
 {
   "name": "malcolm_ui_react",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "types": "src/ui/index.d.ts",
-  "main": "src/ui/index",
+  "types": "dist/ui/index.d.ts",
+  "main": "dist/ui/index",
   "files": [
-    "index.js",
-    "index.d.ts",
-    "src/ui"
+    "dist/ui"
   ],
   "dependencies": {
+    "@preact-signals/safe-react": "^0.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

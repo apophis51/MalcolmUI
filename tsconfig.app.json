@@ -15,7 +15,7 @@
     "jsx": "react-jsx",
     //make it compile d.ts files too -malcolm
     "declaration": true,
-    // "outDir": "./dist",        // Output folder for compiled files
+     "outDir": "./dist",        // Output folder for compiled files
 
 
     /* Linting */
