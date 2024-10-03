@@ -1,7 +1,7 @@
 {
   "name": "malcolm_ui_react",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +12,8 @@
   "main": "src/ui/index.js",
   "files": [
     "index.js",
-    "index.d.ts, src/ui"
+    "index.d.ts",
+    "src/ui"
   ],
   "dependencies": {
     "react": "^18.3.1",
